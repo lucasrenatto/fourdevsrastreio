@@ -1,0 +1,44 @@
+<a href="/consultaalertas" class="btn btn-primary"> Voltar </a> <br>
+<h3> Alertas omitidos do motorista:</h3>
+<style>
+    #mapas{
+     display: inline-block;
+    }
+    .mapa1
+    {
+     height: 250px;
+     width: 250px;   
+    }   
+
+    .mapa2
+    {
+     height: 250px;
+     width: 250px;  
+     display: inline-block;
+    }   
+
+    .mapa3
+    {
+     height: 250px;
+     width: 250px;  
+    }  
+
+
+#mapainicio {
+ float: left;
+}
+#mapatemporeal{
+ float: right;
+}
+</style>
+<tr *ngFor= "let localizacao of localizacoes">  
+<h1>Ultimo Alerta Omitido</h1>
+  
+<i> O caminhão quebrou as:</i>  <i>horas</i> <i>no dia:</i>
+<div id="maptemporeal">
+    <agm-map class="mapa2" [latitude]="localizacao.loc_Lat_Quebrou" [zoom]="zoom" [longitude] = "localizacao.loc_Long_Quebrou">
+        <agm-marker [latitude]="localizacao.loc_Lat_Quebrou" [longitude] ="localizacao.loc_Long_Quebrou"> </agm-marker> 
+      </agm-map>
+   </div>
+   </tr>
+   

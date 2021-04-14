@@ -1,0 +1,36 @@
+<h3>Consultar Alertas</h3>
+<table class="table table-dark">
+  <thead class="thead-dark">
+    <tr>
+        <th> Nome do Motorista</th>        
+        <th class="text-center">Marca</th>
+        <th class="text-center">Placa</th>
+        <th></th>
+      </tr>
+      </thead>
+    
+  <tbody>
+    <tr *ngFor= "let motorista of motoristas">    
+        <td> {{motorista.cm_nome}}</td> <td class ="text-center"> {{motorista.cm_marca_cam}}</td> <td> {{motorista.cm_placa_cam}}</td>   
+
+      
+         
+        
+     
+     
+     
+      
+      
+      
+      <div class="botaover">
+      <a href="/veralertas" class="btn btn-primary"> Ver </a>
+    </div>
+        
+      
+    </tr>
+    </tbody>
+    
+
+    
+  </table>
+  <a href="/index" class="btn btn-success"> Voltar </a>

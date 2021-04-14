@@ -8,6 +8,7 @@
       </li>
     </ul>
   </nav>
+  
 
   <div class="container-fluid">
     <div class="row">
@@ -15,74 +16,30 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <span data-feather="home"></span>
-                Dashboard <span class="sr-only">(current)</span>
+              <a class="nav-link" href="/index">
+                <span data-feather="shopping-cart"></span>
+                Home
               </a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/motoristaindex">
                 <span data-feather="file"></span>
                 Motoristas
               </a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/consultaalertas">
                 <span data-feather="shopping-cart"></span>
                 Alertas
               </a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span data-feather="users"></span>
-               ????
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="bar-chart-2"></span>
-                ??????
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="layers"></span>
-                ?????
-              </a>
-            </li>
-          </ul>
-
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>??????</span>
-            <a class="d-flex align-items-center text-muted" href="#">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                ??????
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                ???????
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                ???????
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                ???????
+                <span data-feather="shopping-cart"></span>
+                Viagens
               </a>
             </li>
           </ul>
@@ -94,15 +51,51 @@
           <h1 class="h2">Dashboard</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-             
+              
             </div>
             
           </div>
         </div>
-        <app-cadastrarmotoristas> </app-cadastrarmotoristas>
-        <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+        
+
+        <style>
+          agm-map {
+            height: 400px;
+            width: 400px;
+          }
+        </style>
+
+        
+        <router-outlet> </router-outlet>
+       
 
          
       </main>
     </div>
   </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Sobre</h6>
+            <p class="text-justify"> Somos a 4Devs e temos como objetivo ajudar empresas que tem objetivo utilizar tecnologia para ampliar seu desenvolvimento. </p>
+          </div>
+
+         
+
+          
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="#">4Devs</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+</footer>

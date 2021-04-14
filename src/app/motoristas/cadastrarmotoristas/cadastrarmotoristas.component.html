@@ -1,1 +1,101 @@
-<p>cadastrarmotoristas works!</p>
+<h2>Cadastrar Motoristas</h2>
+<form #cadastro="ngForm" (submit)="incluirMotorista()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Nome</label>
+        <input type="text" class="form-control" id="inputNomeCM" name ="cm_nome"[(ngModel)] = "motoristaIncluir.cm_nome"   placeholder="Ex: João Carlos" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputdatnasCM">Data de Nascimento</label>
+        <input type="date" class="form-control" id="inputdatnasCM" name ="cm_data_nasc"[(ngModel)] = "motoristaIncluir.cm_data_nasc" required  placeholder="Data de Nascimento">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCpfCM">CPF</label>
+        <input type="text" class="form-control" id="inputCpfCM"  name ="cm_cpf"[(ngModel)] = "motoristaIncluir.cm_cpf" required  placeholder="12345678912">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputRgCM">RG</label>
+        <input type="text" class="form-control" id="inputRgCM"  name ="cm_rg"[(ngModel)] = "motoristaIncluir.cm_rg" required  placeholder="123456789">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Endereço</label>
+      <input type="text" class="form-control" id="inputenderecoCM" name ="cm_endereco"[(ngModel)] = "motoristaIncluir.cm_endereco" required  placeholder="Rua dos Bobos, nº 0">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Cidade</label>
+        <input type="text" class="form-control" id="inputCidadeCM" name ="cm_cidade"[(ngModel)] = "motoristaIncluir.cm_cidade" required >
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputEstadoMT">Estado</label>
+        <select id="inputEstadoMT" class="form-control"  name ="cm_estado"[(ngModel)] = "motoristaIncluir.cm_estado" required >
+          <option selected>Escolher...</option>
+          <option>AC</option>
+          <option>AL</option>
+          <option>AP</option>
+          <option>AM</option>
+          <option>BA</option>
+          <option>CE</option>
+          <option>DF</option>
+          <option>ES</option>
+          <option>GO</option>
+          <option>MA</option>
+          <option>MT</option>
+          <option>MS</option>
+          <option>MG</option>
+          <option>PA</option>
+          <option>PB</option>
+          <option>PR</option>
+          <option>PE</option>
+          <option>PI</option>
+          <option>RJ</option>
+          <option>RN</option>
+          <option>RS</option>
+          <option>RO</option>
+          <option>RR</option>
+          <option>SC</option>
+          <option>SP</option>
+          <option>SE</option>
+          <option>TO</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCepMT]">CEP</label>
+        <input type="text" class="form-control" id="inputCepCM"  name ="cm_cep"[(ngModel)] = "motoristaIncluir.cm_cep" required placeholder= "ex : 00000-000">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputMarcaCM">Marca Caminhão</label>
+        <input type="text" class="form-control" id="inputMarcaCM"  name ="cm_marca_cam"[(ngModel)] = "motoristaIncluir.cm_marca_cam" required placeholder="ex: DAF">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPlacaCM">Placa do Caminhão</label>
+        <input type="text" class="form-control" id="inputPlacaCM"  name ="cm_placa_cam"[(ngModel)] = "motoristaIncluir.cm_placa_cam" required  placeholder="ex:ABC1C34">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputCarteiraCM">Habilitação</label>
+        <select id="inputCarteiraCM" class="form-control"  name ="cm_habilitacao"[(ngModel)] = "motoristaIncluir.cm_habilitacao" required >
+          <option selected>Escolher...</option>
+          <option>A</option>
+          <option>AB</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+          <option>E</option>
+         
+        </select>
+      </div>
+    </div>
+    
+    <button type="submit" class="btn btn-success" href="/consultarmotorista" (click)= "confirmarCadastro()">Salvar</button>
+   
+    <button type="reset" class="btn btn-warning">Limpar</button>
+    <a href="/motoristaindex" class="btn btn-danger"> Cancelar </a>
+    
+    
+    
+    
+      
+  
+ 
+  </form>

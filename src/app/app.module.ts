@@ -7,18 +7,31 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MotoristasModule} from './motoristas/motoristas.module';
 
 
+import {ReactiveFormsModule,FormsModule} from '@angular/forms';
+import {environment} from '../environments/environment';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule } from '@angular/fire/database';
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    
-    
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule, MotoristasModule
+    NgbModule, MotoristasModule, AngularFireModule.initializeApp(environment.firebase), AngularFireDatabaseModule,
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+
+ }

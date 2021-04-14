@@ -1,0 +1,145 @@
+
+<h2>Informações sobre o motorista:</h2>
+<a href="/consultarmotorista" class="btn btn-primary"> Voltar </a>
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Nome</label>
+        <input class="form-control" type="text" placeholder="Lucas Renatto" readonly>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputdatnasCM">Data de Nascimento</label>
+        <input class="form-control" type="text" placeholder="08/05/2001" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCpfCM">CPF</label>
+        <input class="form-control" type="text" placeholder="05597821475" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputRgCM">RG</label>
+        <input class="form-control" type="text" placeholder="124752711" readonly>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Endereço</label>
+      <input class="form-control" type="text" placeholder="Rua Major Tomaz" readonly>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Cidade</label>
+        <input class="form-control" type="text" placeholder="Tomazina" readonly>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputEstadoMT">Estado</label>
+        <input class="form-control" type="text" placeholder="PR" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputCepMT]">CEP</label>
+        <input class="form-control" type="text" placeholder="84935000" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputMarcaCM">Marca Caminhão</label>
+        <input class="form-control" type="text" placeholder="volvo" readonly>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputPlacaCM">Placa do Caminhão</label>
+        <input class="form-control" type="text" placeholder="ABC1C34" readonly>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputCarteiraCM">Habilitação</label>
+        <input class="form-control" type="text" placeholder="E" readonly>
+      </div>
+    </div>
+    
+    
+   <h2> Viagem Atual:</h2>
+   
+    
+    <style>
+     #mapas{
+      display: inline-block;
+     }
+     .mapa1
+     {
+      height: 250px;
+      width: 250px;   
+     }   
+
+     .mapa2
+     {
+      height: 250px;
+      width: 250px;  
+      display: inline-block;
+     }   
+
+     .mapa3
+     {
+      height: 250px;
+      width: 250px;  
+     }  
+
+
+#mapainicio {
+  float: left;
+}
+#mapatemporeal{
+  float: right;
+}
+    </style>
+    
+    
+   <tr *ngFor= "let localizacao of localizacoes">  
+ 
+    <h3>Local de Inicio</h3>
+    <p>A viagem começou as: <br> <b>{{localizacao.loc_Hora}}</b> horas na data <b>{{localizacao.loc_Data}}</b></p>
+   
+   <div id ="mapas">
+    <div id="mapinicio"> 
+    <agm-map class="mapa1" [latitude]="localizacao.loc_Lat" [zoom]="zoom" [longitude] = "localizacao.loc_Long">
+        <agm-marker [latitude]="localizacao.loc_Lat" [longitude] ="localizacao.loc_Long"> </agm-marker> 
+      </agm-map>
+   </div> 
+   <br><br>
+   <h3>Localização Atual</h3>
+   <div id="maptemporeal">
+    <agm-map class="mapa2" [latitude]="localizacao.loc_Lat_Tempo_Real" [zoom]="zoom" [longitude] = "localizacao.loc_Long_Tempo_Real">
+        <agm-marker [latitude]="localizacao.loc_Lat_Tempo_Real" [longitude] ="localizacao.loc_Long_Tempo_Real"> </agm-marker> 
+      </agm-map>
+   </div>
+<br><br>
+<h3>Localização Final</h3>
+   <div id="mapfinal">
+    <agm-map class="mapa3" [latitude]="localizacao.loc_Lat_Final" [zoom]="zoom" [longitude] = "localizacao.loc_Long_Final">
+        <agm-marker [latitude]="localizacao.loc_Lat_Final" [longitude] ="localizacao.loc_Long_Final"> </agm-marker> 
+      </agm-map>
+   </div>
+
+  </div>
+  </tr> 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqmkoqBD66WwX3iCeL_b7WBD2wsJo3f7c" type="text/javascript"></script>
+
+
+   <!--
+    <h3>Local atual</h3>
+    
+    <div class="form-group col-md-2">
+    <agm-map class="mapa2" [latitude]="{{localizacao.loc_lat}}" [longitude] = "{{localizacao.loc_long}}">
+        <agm-marker [latitude]="lat" [longitude] ="lng"> </agm-marker> 
+      </agm-map>
+    </div>
+
+    <h3>Local de Chegada</h3>
+    <p>A viagem terminou as: <br> <b>17:37</b> horas na data <b>19/03/2021</b></p>
+    <div class="form-group col-md-2">
+    <agm-map class="mapa2" [latitude]="-22.964846" [longitude] = "-49.893455">
+        <agm-marker [latitude]="-22.964846" [longitude] ="-49.893455"> </agm-marker> 
+      </agm-map>
+    </div>
+
+  -->
+    
+  </form>
+
+
+
+
