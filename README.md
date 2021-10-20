@@ -1,27 +1,20 @@
-# Projetointegrador4devs
+<h1>Projeto criado na diciplina Projeto Integrador V (UNIFIO/BSI/2021)</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+<h3> Esse Repositório contem: Projeto Angular com o Firebase </h3> 
+<h3> As demais tecnologias utilizadas no projeto estarão em outros repositórios</h3>
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<span> Se localizar no espaço terrestre é uma preocupação da humanidade desde os primórdios. Hoje com a crescente demanda de logística relacionada a entrega de mercadorias, há uma significativa preocupação por parte de administradores de frotas de veículos quanto ao rastreamento da rota realizada pelos mesmos, além da segurança das cargas transportadas. 
+Rastreamento de veículos é uma tecnologia que permite que uma pessoa, à distância, saiba onde está um carro, caminhão ou moto, por exemplo. O rastreador não serve apenas para prevenir roubos. Esse é de fato o motivo mais comum de quem contrata o serviço, mas ele também pode ser usado para acompanhar percursos do veículo em casos específicos.
+Para o Projeto Integrador do Quinto Termo de B.S.I foi sugerido o desenvolvimento de um sistema de rastreamento de veículos. Analisando o que foi sugerido resolvemos desenvolver um projeto para rastreamento de caminhões de carga. Para o desenvolvimento do projeto foi proposto a utilização de algumas tecnologias como: ESP32, ferramentas da Google (Google Maps, Angular e o Firebase) e entre outros. O projeto Rastreio 4Devs, aborda todas as disciplinas de estudo do Quinto Termo de Sistemas de Informação. </span>
+     
+ <span>    
+  Foram definidos alguns objetivos para o desenvolvimento do projeto, sendo eles:<br>
+• Ser capaz de utilizar framework front-end: Nesse projeto utilizou-se como framework de front-end o Bootstrap.<br>
+• Ser capaz de utilizar banco de dados em nuvem: Como é um sistema de rastreio utilizou-se o Firebase para poder ter dados atualizados em tempo real.<br>
+• Ser capaz de analisar, interpretar e programar o funcionamento de um circuito eletrônico: Para a criação de um circuito eletrônico utilizou-se o ESP32.<br>
+• Saber utilizar ferramentas para desenvolvimento de sistemas web: Para o desenvolvimento web utilizou-se o Angular.<br>
+</span>
+  
+  
+  <h2> Esquema do Projeto: </h2>
+<img src="https://i.imgur.com/7NBL8oU.png">
