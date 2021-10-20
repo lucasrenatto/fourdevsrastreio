@@ -10,22 +10,27 @@ import { PerfilmotoristaComponent } from './perfilmotorista/perfilmotorista.comp
 import {AgmCoreModule} from '@agm/core';
 import { ConsultaralertaComponent } from './consultaralerta/consultaralerta.component';
 import { VeralertasComponent } from './veralertas/veralertas.component';
+import { GraficosComponent } from './graficos/graficos.component';
+import { HistoricoComponent } from './historico/historico.component';
+import { VerhistoricoComponent } from './verhistorico/verhistorico.component';
+
 
 
 
 
 @NgModule({
-  declarations: [CadastrarmotoristasComponent, ConsultarmotoristasComponent, MotoristasindexComponent, EditarmotoristaComponent, ConteudoindexComponent, PerfilmotoristaComponent, ConsultaralertaComponent, VeralertasComponent, ],
+  declarations: [CadastrarmotoristasComponent, ConsultarmotoristasComponent, MotoristasindexComponent, EditarmotoristaComponent, ConteudoindexComponent, PerfilmotoristaComponent, ConsultaralertaComponent, VeralertasComponent, GraficosComponent, HistoricoComponent, VerhistoricoComponent],
   imports: [
     CommonModule,ReactiveFormsModule, FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAqmkoqBD66WwX3iCeL_b7WBD2wsJo3f7c'
+      apiKey: 'AIzaSyD28ZXDTgz1TWig809tNwcpZrb5fRR8kKA'
     })
     
     
   ],
   exports: [CadastrarmotoristasComponent,ConsultarmotoristasComponent,MotoristasindexComponent,
-    ConsultarmotoristasComponent, ConteudoindexComponent,PerfilmotoristaComponent,ConsultaralertaComponent,VeralertasComponent]
+    ConsultarmotoristasComponent, ConteudoindexComponent,PerfilmotoristaComponent,ConsultaralertaComponent,VeralertasComponent,
+    GraficosComponent,HistoricoComponent,VerhistoricoComponent]
 })
 export class MotoristasModule {
 }

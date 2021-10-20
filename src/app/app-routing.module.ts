@@ -8,6 +8,9 @@ import { ConteudoindexComponent } from './motoristas/conteudoindex/conteudoindex
 import { PerfilmotoristaComponent } from './motoristas/perfilmotorista/perfilmotorista.component';
 import { ConsultaralertaComponent } from './motoristas/consultaralerta/consultaralerta.component';
 import { VeralertasComponent } from './motoristas/veralertas/veralertas.component';
+import { HistoricoComponent } from './motoristas/historico/historico.component';
+import { VerhistoricoComponent } from './motoristas/verhistorico/verhistorico.component';
+
 
 
 const routes: Routes = [
@@ -17,7 +20,11 @@ const routes: Routes = [
   {path:'index', component: ConteudoindexComponent},
   {path:'perfilmotorista', component:PerfilmotoristaComponent},
   {path:'consultaalertas', component:ConsultaralertaComponent},
-  {path: 'veralertas', component:VeralertasComponent}
+  {path: 'veralertas', component:VeralertasComponent},
+  {path: 'historico', component:HistoricoComponent},
+  {path:'verhistorico',component:VerhistoricoComponent}
+
+
 
 
 ];

@@ -7,12 +7,6 @@ import {AngularFireList} from '@angular/fire/database';
 import {Router} from '@angular/router';
 import { Injectable } from '@angular/core';
 
-
-
-
-
-
-
 @Component({
   selector: 'app-consultarmotoristas',
   templateUrl: './consultarmotoristas.component.html',

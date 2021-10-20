@@ -10,11 +10,14 @@ export class consultarMotorista {
 }
 
 export class localizacao {
-  constructor (public key:string,public loc_Lat:string, public loc_Long:string, 
+    constructor (public key:string,public loc_Lat:string, public loc_Long:string, 
     public loc_Caminhao_Quebrado:string,public loc_viagem:string, public loc_Data:string, 
     public loc_Hora:string, public loc_Lat_Final:string, public loc_Lat_Quebrou:string,
-    public loc_Lat_Tempo_Real:string, public loc_Long_Final, public loc_Long_Quebrou:string,
-    public loc_Long_Tempo_Real:string, public loc_Status_Viagem:string  )  {
+    public loc_Lat_Tempo_Real:string, public loc_Long_Final:string, public loc_Long_Quebrou:string,
+    public loc_Long_Tempo_Real:string, public loc_Status_Viagem:string, public Loc_Quebrado_Data:string,
+    public Loc_Quebrado_Hora:string, public loc_Long_Inicial:string, public loc_Lat_Inicial:string)  {
 
   }
 }
+
+

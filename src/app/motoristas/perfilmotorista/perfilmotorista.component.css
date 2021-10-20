@@ -1,0 +1,43 @@
+h3{
+    font-size: 16px;
+}
+#mapas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:1.5em;
+    padding:0.5em 1em
+
+   
+   }
+   #mapinicio
+   {
+    flex:1;
+    border: 2px solid black;
+   }   
+
+   #maptemporeal
+   {
+    flex:1;  
+    border: 2px solid black;
+   }   
+
+   #mapfinal
+   {
+    flex:1; 
+    border: 2px solid black;
+    
+   }
+   .mpend{
+    height: 200px;
+    width: 200px; 
+   }
+   .mapstart{
+    height: 200px;
+    width: 200px; 
+    margin-right: 20px;
+   }
+   .mpnow{
+    height: 200px;
+    width: 200px; 
+   }
